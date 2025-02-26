@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>"Hello World"</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayDate = function(str){  //  str is used to return the string "harsh"
+        console.log(str, Date.now());  //  or console.log("Hello")
+    }
+    
+    // const intervalId =  setTimeout(sayDate,1000, "hello")
+
+    document.querySelector('#start').addEventListener('click',function(){
+        const start =setInterval(sayDate,1000, "harsh")  //  remove hello
+        console.log("START"); 
+
+        document.querySelector('#stop').addEventListener('click',function(){
+        clearInterval(start)
+        console.log("STOPPED");
+        
+        })
+
+    })
+
+
+</script>
+</html>
