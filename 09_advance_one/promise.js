@@ -106,7 +106,7 @@ new Promise(function (resolve, reject) {
 
 //   promise five
 //     promise handling using "ASYNC AND AWAIT"
-//    async await can't handle error directly  show they will through error if erroe is found
+//    async await can't handle error directly  show they will through error if error is found
 
 
 const promiseFive = new Promise(function (resolve, reject) {
